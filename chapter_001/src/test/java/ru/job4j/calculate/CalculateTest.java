@@ -1,8 +1,11 @@
-package ru.job4j;
+package ru.job4j.calculate;
 
 import org.junit.Test;
+import ru.job4j.calculate.Calculate;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -21,7 +24,7 @@ public class CalculateTest {
     public void whenAddOneToOneThenTwo() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        ru.job4j.Calculate.main(null);
+        Calculate.main(null);
         assertThat(
                 out.toString(),
                 is(

@@ -18,14 +18,11 @@ public class Max {
     public int max(int first, int second) {
 
         /**
-         * декларируем целочисленную переменную maximum и инициализируем ее значением
-         * полученным из тернарного выражения.
-         */
-        int maximum = first < second ? second : first;
-        /**
          * metod return.
          */
-        return maximum;
+        return first < second ? second : first;
+
+
     }
 
 }
